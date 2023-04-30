@@ -1,0 +1,151 @@
+/* Repeated colours throughout the sheet. */
+:root {
+    --pink:#f14ef8;
+    --light:#c9cddd;
+    --black:#000000;
+}
+
+/* Sets font size to 1rem=10px for easier conversion (i.e. 1.5rem=15px). */
+html {
+    font-size: 62.5%;
+}
+
+/* Sets body layout and styling. */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--light);
+    background-color: var(--black);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Sets heading styling. */
+h1,
+h2,
+h3,
+h4 {
+    line-height: 2.0;
+    font-weight: 500;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+/* Sets heading size. */
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--pink);
+}
+
+h3 {
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+/* Cancels out the underline for the links. */
+a {
+    text-decoration: none;
+    position:relative;
+    color: inherit;
+}
+
+/* Sets header layout and styling. */
+header {
+    text-align: left;
+    padding: 8rem;
+    width: 100%;
+}
+
+/* Sets the font size for the quote. */
+q {
+    font-size: 2.5rem;
+    text-decoration-line: overline;
+    text-decoration-color: var(--pink);
+
+}
+
+/* Sets pseud-class and -element to show author of the quote. */
+span[data-author] {
+    cursor:help;
+}
+
+span[data-author]:hover::after {
+    content: attr(data-author);
+    position: absolute;
+    top: 28rem;
+    left: 30rem;
+    font-size: small;
+    color: var(--pink);
+}
+
+/* Sets the layout and position for the navigation bar. */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5rem 0 0 0;
+}
+
+nav li {
+    display: inline;
+    text-transform: uppercase;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+/* Sets pseudo-class for the navigation menu when it is hovered. */
+nav li:hover {
+    border: 2px solid var(--pink);
+    border-radius: 15px;
+    box-shadow: 0 0 15px var(--pink);
+}
+
+/* Sets pseudo-class for the navigation menu when it is active. */
+nav li:active {
+    color: var(--pink);
+}
+
+.avatar {
+    margin: 8rem;
+    text-align: left;
+    background-image: url(https://i.pinimg.com/originals/34/1e/80/341e800b1f29d3e34ea2eba5a6af205c.gif);
+}
+
+.avatar img {
+    height: 30rem;
+    padding:20px;
+}
+
+/* Sets layout for main section. */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem;
+}
+
+/* Bio Section */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Sets layout and styling for footer. */
+footer {
+    margin: 8rem;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid var(--pink);
+    border-radius: 15px;
+}
+
+/* Sets hover effect for the footer */
+footer:hover {
+    box-shadow: 0 0 15px var(--pink);
+}
