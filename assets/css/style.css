@@ -17,16 +17,17 @@ body {
     background-color: var(--black);
     font-size: 2rem;
     line-height: 1.5;
+    margin: 8rem;
 }
 
 /* Sets heading styling. */
 h1,
 h2,
 h3,
-h4 {
-    line-height: 2.0;
-    font-weight: 500;
-    margin: 1rem 0;
+h4,
+h5 {
+    line-height: 2;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -36,36 +37,41 @@ h1 {
 }
 
 h2 {
+    font-size: 5rem;
+    color: var(--light);
+    text-align: right;
+    position: absolute;
+    right: 10rem;
+    top: 60rem;
+}
+
+h3 {
     font-size: 4rem;
     color: var(--pink);
 }
 
-h3 {
+h4 {
     font-size: 3rem;
     color: var(--pink);
 }
 
-h4 {
+h5 {
     font-size: 2.5rem;
 }
 
 /* Cancels out the underline for the links. */
 a {
     text-decoration: none;
-    position:relative;
     color: inherit;
 }
 
 /* Sets header layout and styling. */
 header {
     text-align: left;
-    padding: 8rem;
-    width: 100%;
 }
 
 /* Sets the font size for the quote. */
 q {
-    font-size: 2.5rem;
     border-top: 2px solid var(--pink);
     padding: 0.5rem 0;
 }
@@ -87,52 +93,48 @@ span[data-author]:hover::after {
 /* Sets the layout and position for the navigation bar. */
 nav {
     display: flex;
-    justify-content: flex-end;
-    margin: 6rem 0 0 0;
-    padding: 3rem 0;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    margin: 5.5rem 0 0 0;
+    padding: 1rem 0;
     border-top: 2px solid var(--pink);
 }
 
 nav li {
-    display: inline;
+    display: inline-flex;
     text-transform: uppercase;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
-/* Sets pseudo-class for the navigation menu when it is hovered. */
-nav li:hover {
+/* Sets pseudo-class for the navigation menu and the contact list when it is hovered. */
+li:hover {
     border: 2px solid var(--pink);
     border-radius: 15px;
     box-shadow: 0 0 15px var(--pink);
 }
 
-/* Sets pseudo-class for the navigation menu when it is active. */
-nav li:active {
+/* Sets pseudo-class for the navigation menu and the contact list when it is active. */
+li:active {
     color: var(--pink);
 }
 
 /* Sets background banner. */
 .avatar {
-    margin: 8rem;
     text-align: left;
+    align-items: center;
     background-image: url(https://i.pinimg.com/originals/34/1e/80/341e800b1f29d3e34ea2eba5a6af205c.gif);
 }
 
 /* Sets profile photo layout. */
 .avatar img {
-    height: 30rem;
-    padding:20px;
+    height: 29rem;
+    padding: 0.5%;
 }
 
-/* Sets margin around main section. */
-main {
-    margin: 8rem;
-}
-
-/* Sets margin after each section. */
+/* Sets margin around each article. */
 article {
-    margin-bottom: 10rem;
+    margin: 10rem;
 }
 
 /* Sets title styling and layout. */
@@ -140,7 +142,6 @@ article {
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     text-align: right;
     border-right: 2px solid var(--pink);
     padding-right: 2rem;
@@ -165,34 +166,37 @@ article {
     display: inline-flex;
 }
 
+/* Sets layout for the work contents. */
 .work-body {
     margin: 4rem;
     padding: 2rem;
-    width: 100%;
-}
-
-.big {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+}
+.work-body img {
+    border: 1px solid var(--pink);
+    margin: 1rem;
 }
 
-.small {
+/* Sets layout for the other applications. */
+.other-apps {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
 }
 
+/* Sets image size for the main application. */
 .main-app img {
-    width: 100%;
+    width: 100rem;
+    height: 25rem;
 }
 
+/* Sets image size for the other small applications. */
 .app img {
-    width: 100%;
+    width: 50rem;
+    height: 25rem;
 
 }
 
@@ -223,30 +227,13 @@ article {
     margin: 2rem;
     padding: 1rem;
     display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-decoration: overline;
+    flex-flow: row wrap;
 }
-
-/* Sets hover pseudo-class for contact list. */
-.contact li:hover {
-    border: 2px solid var(--pink);
-    border-radius: 15px;
-    box-shadow: 0 0 15px var(--pink);
-
-}
-
-/* Sets pseudo-class for the contact list when it is active. */
-.contact li:active {
-    color: var(--pink);
-}
-
 
 /* Sets layout and styling for footer. */
 footer {
-    margin: 8rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 2px solid var(--pink);
     border-radius: 15px;
 }
