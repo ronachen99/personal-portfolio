@@ -66,9 +66,8 @@ header {
 /* Sets the font size for the quote. */
 q {
     font-size: 2.5rem;
-    text-decoration-line: overline;
-    text-decoration-color: var(--pink);
-
+    border-top: 2px solid var(--pink);
+    padding: 0.5rem 0;
 }
 
 /* Sets pseud-class and -element to show author of the quote. */
@@ -89,7 +88,9 @@ span[data-author]:hover::after {
 nav {
     display: flex;
     justify-content: flex-end;
-    margin: 5rem 0 0 0;
+    margin: 6rem 0 0 0;
+    padding: 3rem 0;
+    border-top: 2px solid var(--pink);
 }
 
 nav li {
@@ -111,28 +112,133 @@ nav li:active {
     color: var(--pink);
 }
 
+/* Sets background banner. */
 .avatar {
     margin: 8rem;
     text-align: left;
     background-image: url(https://i.pinimg.com/originals/34/1e/80/341e800b1f29d3e34ea2eba5a6af205c.gif);
 }
 
+/* Sets profile photo layout. */
 .avatar img {
     height: 30rem;
     padding:20px;
 }
 
-/* Sets layout for main section. */
+/* Sets margin around main section. */
 main {
-    display: flex;
-    flex-direction: column;
     margin: 8rem;
 }
 
-/* Bio Section */
-.about-me {
+/* Sets margin after each section. */
+article {
+    margin-bottom: 10rem;
+}
+
+/* Sets title styling and layout. */
+.title { 
+    
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: right;
+    border-right: 2px solid var(--pink);
+    padding-right: 2rem;
+    align-items: stretch;
+}
+
+/* Bio Section. */
+.about {
+    display: inline-flex;
+}
+
+/* Sets bio paragraph styling. */
+.about-body {
+    margin: 4rem;
+    padding: 2rem;
+    text-align: justify;
+    width: 100%;
+}
+
+/* Project Section */
+.work {
+    display: inline-flex;
+}
+
+.work-body {
+    margin: 4rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.big {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.small {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-app img {
+    width: 100%;
+}
+
+.app img {
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sets layout for contact section. */
+.contact {
+    display: inline-flex;
+}
+
+.contact-body {
+    margin: 4rem;
+    padding: 2rem;
+    text-align: end; 
+    width: 100%;
+}
+
+.contact li {
+    margin: 2rem;
+    padding: 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: overline;
+}
+
+/* Sets hover pseudo-class for contact list. */
+.contact li:hover {
+    border: 2px solid var(--pink);
+    border-radius: 15px;
+    box-shadow: 0 0 15px var(--pink);
+
+}
+
+/* Sets pseudo-class for the contact list when it is active. */
+.contact li:active {
+    color: var(--pink);
 }
 
 
