@@ -2,7 +2,7 @@
 :root {
     --pink:#f14ef8;
     --light:#c9cddd;
-    --black:#000000;
+    --black:#00001b;
     --blue:#0a0242;
 }
 
@@ -90,18 +90,18 @@ span[data-author]:hover::after {
     color: var(--pink);
 }
 
-/* Sets the layout and position for the navigation bar. */
+/* Sets the border for the navigation bar. */
 nav {
     border-top: 1px solid var(--pink);
 }
 
-.right {
+/* Sets the position of the navigation bar. */
+.nav-right {
     display: flex;
     justify-content: right;
     position: absolute;
     top: 2rem;
     right: 8rem;
-
 }
 
 /* Sets layout for menu list and contact list. */
@@ -144,7 +144,6 @@ article {
 
 /* Sets title styling and layout. */
 .title { 
-    
     display: flex;
     flex-wrap: wrap;
     text-align: right;
@@ -153,7 +152,8 @@ article {
     align-items: stretch;
 }
 
-article {
+/* Bio Section */
+.about-section {
     display: flex;
 }
 
@@ -163,6 +163,11 @@ article {
     padding: 2rem;
     text-align: justify;
     width: 100%;
+}
+
+/* Work Section */
+.work-section {
+    display: flex;
 }
 
 /* Sets layout for the work contents. */
@@ -181,12 +186,12 @@ article {
     opacity: 0.5;
 }
 
-
 /* Sets hover pseudoclass for projects. */
 .work-body img:hover {
     opacity: 1.0;
 }
 
+/* Sets flex box for the main project. */
 .main-work { 
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +223,7 @@ article {
     padding: 0;
 }
 
+/* Sets project header position. */
 .work-header {
     background-color: var(--blue);
     opacity: 70%;
@@ -228,6 +234,11 @@ article {
     padding: 1rem;
 }
 
+/* Contact Section */
+.contact-section {
+    display: flex;
+}
+
 /* Sets layout for contact list. */
 .contact-body {
     margin: 4rem;
@@ -236,6 +247,7 @@ article {
     text-align: center;
 }
 
+/* Sets contact list margin. */
 .contact-body li {
     margin: 0 3rem;
 }
@@ -252,3 +264,4 @@ footer {
 footer:hover {
     box-shadow: 0 0 15px var(--pink);
 }
+
