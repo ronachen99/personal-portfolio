@@ -64,10 +64,20 @@ a {
     color: inherit;
 }
 
+/* Sets the main secton as a flex box. */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* Sets header layout and styling. */
 header {
     text-align: left;
     margin-bottom: 8rem;
+    
 }
 
 /* Sets the font size for the quote. */
@@ -144,8 +154,6 @@ article {
 
 /* Sets title styling and layout. */
 .title { 
-    display: flex;
-    flex-wrap: wrap;
     text-align: right;
     border-right: 2px solid var(--pink);
     padding-right: 2rem;
@@ -168,6 +176,8 @@ article {
 /* Work Section */
 .work-section {
     display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 /* Sets layout for the work contents. */
@@ -175,6 +185,8 @@ article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 4rem;
     padding: 2rem;
 }
@@ -191,33 +203,25 @@ article {
     opacity: 1.0;
 }
 
-/* Sets flex box for the main project. */
-.main-work { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-}
-
 /* Sets layout for the other applications. */
 .other-work {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 /* Sets image size for the main application. */
 .main-work img {
-    width: 125rem;
+    width: 120rem;
     margin: 0;
     padding: 0;
 }
 
 /* Sets image size for the other small applications. */
 .other-work img {
-    width: 60rem;
+    width: 55rem;
     height: 30rem;
     margin: 0;
     padding: 0;
