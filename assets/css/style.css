@@ -47,9 +47,14 @@ h2 {
     line-height: 2;
 }
 
+/* Sets border on the right of the header and elongates on the y-axis. */
 h3 {
     font-size: 4rem;
     color: var(--pink);
+    text-align: right;
+    border-right: 2px solid var(--pink);
+    padding-right: 2rem;
+    align-items: stretch;
 }
 
 h4 {
@@ -118,39 +123,33 @@ li:active {
 }
 
 /* Sets margin around each article. */
-article {
+section {
     padding: 5rem;
 }
 
-/* Sets title styling and layout. */
-.title { 
-    text-align: right;
-    border-right: 2px solid var(--pink);
-    padding-right: 2rem;
-    align-items: stretch;
-}
-
 /* Bio Section */
-.about-section {
+.bio-section {
     display: flex;
 }
 
 /* Sets bio paragraph styling. */
-.about-body {
+.bio-section p {
     margin: 2rem;
     padding: 2rem;
     text-align: justify;
     width: 100%;
 }
 
-/* Work Section */
-.work-section {
+/* Project Section */
+.project-section {
     display: flex;
     width: 100vw;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 /* Sets layout for the work content. */
-.work-body {
+.project-body {
     margin: 2rem;
     padding: 2rem;
     display: flex;
@@ -162,18 +161,18 @@ article {
 }
 
 /* Sets border and opacity for images in the project section. */
-.work-section img {
+.project-section img {
     border: 4px solid var(--blue);
     opacity: 0.5;
 }
 
 /* Sets hover pseudoclass for projects. */
-.work-section img:hover {
+.project-section img:hover {
     opacity: 1.0;
 }
 
 /* Sets layout for the work body anchor container to take 100% of its parent container (.image-container).  */
-.work-body a {
+.project-body a {
     width: 100%;
     height: 100%;
     display:flex;
@@ -182,13 +181,13 @@ article {
 }
 
 /* Sets the project images to fill 100% of its parent container (.a) */
-.work-body img{
+.project-body img{
     width:100%;
     height: 100%
 }
 
 /* Aligns the layout for the main project. */
-.main-work {
+.main-project {
     display: flex;
     width: 90%;
     justify-content: center;
@@ -202,7 +201,7 @@ article {
 }
 
 /* Sets rules for the project names box. */
-.work-header {
+.project-label {
     background-color: var(--blue);
     opacity: 70%;
     text-align: left;
@@ -213,31 +212,33 @@ article {
 }
 
 /* Sets flex rules for the side projects. */
-.other-works{
+.side-projects{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 /* Determines the total width of space each side project would take.*/
-.work-holder{
-    width: 45%;
+.side-containers{
+    width: 35%;
 }
 
 /* Contact Section */
 .contact-section {
     display: flex;
+    margin: 2rem;
+    padding: 2rem;
+
 }
 
 /* Sets layout for the contact body. */
 .contact-body {
-    margin: 2rem;
-    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    justify-items: space-around;
-    flex-wrap: wrap;
     text-align: center;
+    margin-left: 18rem;
 }
 
 /* Sets contact list margin. */
