@@ -15,6 +15,8 @@
 
 The objective of establishing this repository is to construct a personalized portfolio website that introduces oneself and showcases accomplished projects. This initiative serves as an efficacious method for potential employers to acquire a comprehensive understanding of one's competencies.
 
+Note: Due to an insufficient number of completed projects to showcase, placeholder images have been utilized in the project section of the webpage.
+
 <br>
 
 ### The webpage has...
