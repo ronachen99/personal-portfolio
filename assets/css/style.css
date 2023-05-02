@@ -157,7 +157,6 @@ section {
     justify-content: center;
     align-items: center;
     width: 80%;
-    
 }
 
 /* Sets border and opacity for images in the project section. */
@@ -189,9 +188,10 @@ section {
 /* Aligns the layout for the main project. */
 .main-project {
     display: flex;
-    width: 85%;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    flex-basis: 50rem;
 }
 
 /* Make all images in the project section fill up the full width of its parent container. */
@@ -221,6 +221,7 @@ section {
 /* Determines the total width of space each side project would take.*/
 .side-containers{
     width: 35%;
+    flex-basis: 45rem;
 }
 
 /* Contact Section */
@@ -259,4 +260,18 @@ footer {
 /* Sets hover effect for the footer */
 footer:hover {
     box-shadow: 0 0 15px var(--pink);
+}
+
+@media screen and (max-width: 900px) {
+    .contact-body {
+        flex-direction: column;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        padding-top: 10rem;
+        font-size: 4rem;
+    }
+
 }
