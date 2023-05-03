@@ -237,7 +237,7 @@ footer:hover {
     .avatar {
         text-align: center;
     }
-    
+
     h1,
     h2 {
         text-align: center;
@@ -352,5 +352,6 @@ footer:hover {
     .main-project{
         padding:0;
         width: 24rem;
+        height: 30rem;
     }
 }
