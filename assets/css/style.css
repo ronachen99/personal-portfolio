@@ -217,7 +217,7 @@ p {
 
 /* Sets margin for the contact list. */
 #contact li {
-    margin: 15rem;
+    margin: 8rem;
 }
 
 /* Sets layout and styling for the footer. */
@@ -237,7 +237,7 @@ footer:hover {
     .avatar {
         text-align: center;
     }
-
+    
     h1,
     h2 {
         text-align: center;
@@ -306,6 +306,12 @@ footer:hover {
     #contact li {
         margin: 30px;
     }
+
+    .main-project{
+        padding:0;
+        height: 50rem;
+        width: 57.5rem;
+    }
 }
 
 /* Sets media query for 375px width. */
@@ -341,5 +347,10 @@ footer:hover {
     
     #contact li {
         margin: 5px;
+    }
+
+    .main-project{
+        padding:0;
+        width: 24rem;
     }
 }

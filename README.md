@@ -30,8 +30,8 @@ Note: Due to an insufficient number of completed projects to showcase, placehold
 
 ## Visuals
 
-This is a screenshot of the webpage:
-![A screenshot of the website.](./assets/images/Screenshot.png)
+This is a screenshot of the webpage on desktop:
+![A screenshot of the website.]()
 
 <br>
 
