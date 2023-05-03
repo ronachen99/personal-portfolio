@@ -53,7 +53,7 @@ This is a screenshot on an iPhone SE (375px):
 
 ## Deployed Webpage
 
-https://ronachen99.github.io/rona-chen-portfolio/
+https://ronachen99.github.io/personal-portfolio/
 
 <br>
 
