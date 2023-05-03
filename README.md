@@ -19,7 +19,8 @@ Note: Due to an insufficient number of completed projects to showcase, placehold
 
 <br>
 
-### The webpage has...
+### The webpage has:
+
 - Glowing navigation and contact menu when hovered
 - Navigation and contact menu changes colour when active
 - Navigation bar take users to the specified sections within the webpage
@@ -28,10 +29,25 @@ Note: Due to an insufficient number of completed projects to showcase, placehold
 - Project image redirect users to external sources when selected
 - Glowing footer when hovered
 
+<br>
+
+### Media Query:
+
+- The webpage adjusts to a device that has a width of 900px.
+- The webpage adjusts to a device that has a width of 375px (i.e. iPhone SE).
+
+<br>
+
 ## Visuals
 
 This is a screenshot of the webpage on desktop:
-![A screenshot of the website.]()
+![A screenshot of the website.](./assets/images/Desktop%20(3).png)
+
+This is a screenshot on a device with 900px:
+![A screenshot of the website on a device that is 900px width.](./assets/images/900px.png)
+
+This is a screenshot on an iPhone SE (375px):
+![A screenshot of the website on a device that is 375px width.](./assets/images/iPhone%20SE.png)
 
 <br>
 
