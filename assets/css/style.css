@@ -19,7 +19,7 @@ body {
     font-size: 2.5rem;
 }
 
-/* Sets heading styling including font weight and case. */
+/* Sets heading styling to make it uppercase and bolder. */
 h1,
 h2,
 h3,
@@ -29,7 +29,7 @@ h5 {
     text-transform: uppercase;
 }
 
-/* Sets heading size, colouring, and layout. */
+/* Sets heading size, colouring, and layout for h1, h2, h3, h4, and h5. */
 h1 {
     font-size: 7rem;
     line-height: 2;
@@ -136,20 +136,20 @@ p {
 
 }
 
-/* For sections that are immediate children of id project. */
+/* Sets width for sections that are immediate children of id project. */
 #project > section {
     flex-direction: column;
     width: 80%;
 }
 
-/* Sets flex, and to the center. */
+/* Sets flex boxes to the center. */
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Sets border and opacity for images in the project section. */
+/* Sets opacity for images in the project section. */
 .main-project img,
 .side-projects img {
     opacity: 0.5;
@@ -163,7 +163,7 @@ p {
     opacity: 1.0;
 }
 
-/* Sets layout for the work body anchor container to take 100% of its parent container (.image-container).  */
+/* Sets layout for the work body anchor container to take 100% of its parent container (.image-container). And sets a border around the container */
 #project a {
     width: 100%;
     height: 100%;
@@ -173,7 +173,7 @@ p {
     align-items: center;
 }
 
-/* Aligns the layout for the main project. */
+/* Defines the width of the main project. */
 .main-project {
     width: 90%;
 }
@@ -184,7 +184,7 @@ p {
     position: relative;
 }
 
-/* Sets rules for the project names box. */
+/* Sets rules for the project label. */
 .project-label {
     background-color: var(--blue);
     opacity: 70%;
@@ -209,27 +209,30 @@ p {
     flex-basis: 60rem;
 }
 
+/* Sets flex for contact id. */
 #contact {
     display: flex;
     flex: wrap;    
 }
 
+/* Sets margin for the contact list. */
 #contact li {
     margin: 15rem;
 }
 
-/* Sets layout and styling for footer. */
+/* Sets layout and styling for the footer. */
 footer {
     padding: 1rem;
     border: 2px solid var(--pink);
     border-radius: 15px;
 }
 
-/* Sets hover effect for the footer */
+/* Sets hover effect for the footer. */
 footer:hover {
     box-shadow: 0 0 15px var(--pink);
 }
 
+/* Sets media query for 900px width. */
 @media screen and (max-width: 900px) {
     .avatar {
         text-align: center;
@@ -305,6 +308,7 @@ footer:hover {
     }
 }
 
+/* Sets media query for 375px width. */
 @media screen and (max-width: 375px) {
     nav a { 
         font-size: 16px;
