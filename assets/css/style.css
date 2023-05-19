@@ -130,9 +130,10 @@ li:active {
 /* Sets paragraph styling. */
 p {
     text-align: justify;
-    width: 100%;
+    width: 80%;
     padding: 2%;
     line-height: 2;
+    font-size: 20px;
 
 }
 
