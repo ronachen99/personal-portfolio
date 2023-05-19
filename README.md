@@ -2,12 +2,16 @@
 
 ## Table of Contents
 
-- [Description](#description)
-- [Visuals](#visuals)
-- [Deployed Webpage](#deployed-webpage)
-- [Installation](#installation)
-- [Credits](#credits)
-- [License](#license)
+- [Rona Chen's Portfolio Website](#rona-chens-portfolio-website)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+    - [The webpage has:](#the-webpage-has)
+    - [Media Query:](#media-query)
+  - [Visuals](#visuals)
+  - [Deployed Webpage](#deployed-webpage)
+  - [Installation](#installation)
+  - [Credits](#credits)
+  - [License](#license)
 
 <br>
 
